@@ -1,4 +1,5 @@
 import { Button, Flex, Heading, VStack, Box } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -9,10 +10,10 @@ const Index = () => {
             Reparto Grupo de Defensa Jurídica
           </Heading>
           <VStack spacing={6}>
-            <Button colorScheme="green" size="lg" borderRadius="full" px={12} py={8}>
+            <Button as={Link} to="/asigna" colorScheme="green" size="lg" borderRadius="full" px={12} py={8}>
               Ingresar Datos
             </Button>
-            <Button colorScheme="green" size="lg" borderRadius="full" px={12} py={8}>
+            <Button as={Link} to="/consulta" colorScheme="green" size="lg" borderRadius="full" px={12} py={8}>
               Consultar Información
             </Button>
           </VStack>
